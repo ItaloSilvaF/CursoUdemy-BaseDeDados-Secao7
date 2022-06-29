@@ -64,7 +64,6 @@ def conecta():
 #         cursor.execute(sql, ('Italo', 5))
 #         conexao.commit()
 
-
 with conecta() as conexao:  # Seleciona os dados da base de dados
     with conexao.cursor() as cursor:
         cursor.execute('SELECT * FROM clientes ORDER BY id ASC LIMIT 100')
